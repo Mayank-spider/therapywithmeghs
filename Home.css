@@ -1,0 +1,361 @@
+/* ------------------------------------
+   GIRLY THEME COLORS
+------------------------------------ */
+:root {
+    --pink: #f8d8e8;
+    --softpink: #ffeaf4;
+    --rose: #ffb6d5;
+    --text: #444;
+    --primary: #7b255c;
+}
+
+/* ------------------------------------
+   RESET
+------------------------------------ */
+body {
+    margin: 0;
+    font-family: 'ARIAL', sans-serif;
+    background: #fff;
+    color: var(--text);
+}
+
+/* ------------------------------------
+   HEADER
+------------------------------------ */
+header {
+    background: var(--white);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary);
+    font-family: "DM SANS",Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* ------------------------------------
+   HERO SECTION
+------------------------------------ */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.photo-box {
+    width: 100%;
+    height: 600px;
+    background-image: url('megha\ 1.JPG'); /* Your image */
+    background-size: cover;   /* Fills the box without distortion */
+    background-position: center; /* Centers your face */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: serif;
+    
+
+    
+}
+
+
+
+.hero p {
+    max-width: 600px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 17px;
+    font-style: italic;
+    
+}
+
+
+
+/* ------------------------------------
+   SESSION BOX
+------------------------------------ */
+.session-box {
+    color: #fff;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 12px;
+    width: 80%;
+    margin: 40px auto;
+    background-color:#dc98c2; ;
+}
+
+.session-box .btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ------------------------------------
+   INFO BOXES (Ideal Client / Why Choose...)
+------------------------------------ */
+.info-box {
+    width: 85%;
+    margin: 50px auto;
+    padding: 40px;
+    background: var(--softpink);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-box h2 {
+    color: var(--primary);
+    margin-top: 0;
+    text-align: center;   /* Centering your H2 here */
+}
+
+.info-box p{
+    text-align: center;
+    font-family: "DM SANS",Arial, Helvetica, sans-serif;
+}
+
+.info-box ul {
+    line-height: 1.8;
+}
+
+.info-box ul {
+    margin-left: 20px;
+}
+/* REVIEWS SECTION */
+.review-slide {
+    width: 100%;
+    height: 450px; /* you can adjust */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-slide img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.reviews-section {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #7b255c;
+    margin-bottom: 25px;
+}
+
+/* CAROUSEL */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--softpink);
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.review-slide img {
+    width: 80%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ARROWS */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffb6d5;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* DOTS */
+.carousel-dots {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel-dots div {
+    width: 10px;
+    height: 10px;
+    background: #d4a3b4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    background: #7b255c;
+}
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 10px 0;
+    margin: 0;
+}
+.main-footer {
+    background: #111;
+    color: #eee;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-container h2,
+.footer-container h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle a,
+.footer-right a {
+    color: #eee;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-middle a:hover,
+.footer-right a:hover {
+    color: #ffcc66;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .service-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+

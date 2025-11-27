@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghs Website</title>
+    <link rel="stylesheet" href="Home.css">
+
+    <style>
+        /* HAMBURGER + MOBILE NAV FIX */
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--primary);
+            
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* MOBILE MENU HIDDEN */
+        #mobileMenu {
+            display: none;
+            flex-direction: column;
+            background: white;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            width: 160px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        #mobileMenu a {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        #mobileMenu.active {
+            display: flex;
+        }
+
+        /* SHOW HAMBURGER ON MOBILE */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Therapy With Meghs</div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- DESKTOP NAV -->
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#FAQ">FAQ</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <!-- MOBILE DROPDOWN NAV -->
+        <nav id="mobileMenu">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="#">Services</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#FAQ">FAQ</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- PHOTO + QUOTE -->
+    <section class="hero">
+        <div class="photo-box"></div>
+        
+
+        <h1>Welcome to Therapy With Meghs</h1>
+        <p>“Can you remember who you were, before the world told you who you should be?”</p> </br>
+        <p>- Charles Bukowski</p>
+    </section>
+
+    <!-- WHATSAPP SESSION BOX -->
+    <section class="session-box">
+        <h2>Schedule a Session</h2>
+        <p>Click below to book your therapy session directly on WhatsApp.</p>
+        <a class="btn" href="https://wa.me/918076561354" target="_blank">REACH OUT NOW</a>
+    </section>
+
+
+    <!-- IDEAL CLIENT BOX -->
+    <section class="info-box">
+        <div class="content-card">
+            <h2>MY IDEAL CLIENT</h2>
+            <p>My ideal client is seeking a safe, compassionate space to be seen and understood 
+                without judgment. Someone ready for deeper, long-term healing rather than temporary relief.</p>
+                
+               <p>I support individuals who feel stuck in recurring patterns or are navigating anxiety, grief, romantic breakups, 
+                guilt, low self-esteem, attachment issues, psycho-somatic pain, relationship conflicts, or the impact of traumatic experiences.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- REVIEWS CAROUSEL SECTION -->
+<section class="reviews-section"id="Testimonials">
+    <h2 class="reviews-title">CLIENT REVIEWS</h2>
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+
+            <div class="review-slide">
+                <img src="review 1.jpeg" alt="Client Review">
+            </div>
+
+            <div class="review-slide">
+                <img src="review 2.jpeg" alt="Client Review">
+            </div>
+
+            <div class="review-slide">
+                <img src="review 3.jpeg" alt="Client Review">
+            </div>
+
+            <div class="review-slide">
+                <img src="review 4.jpeg" alt="Client Review">
+            </div>
+
+        </div>
+
+        <button class="carousel-btn prev">❮</button>
+        <button class="carousel-btn next">❯</button>
+
+        <div class="carousel-dots"></div>
+    </div>
+</section>
+
+
+<section class="faq-section" id="FAQ">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">How can I book a session?</button>
+        <div class="faq-answer">
+            <br>You can book a session through:<br><br>
+            WhatsApp: <a href="https://wa.me/918076561354" target="_blank">+91 80765 61354</a><br><br>
+            Email: <a href="mailto:lakhchaura.megha1@gmail.com">lakhchaura.megha1@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">How are the sessions conducted?</button>
+        <div class="faq-answer">
+            <p>All sessions are conducted virtually.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What age group do you work with?</button>
+        <div class="faq-answer">
+            <p>I offer therapy online to Indian adults between ages of 20 - 50, globally. I work with individuals from all walks of life.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What services do you offer?</button>
+        <div class="faq-answer">
+            <p>I offer counselling and therapy session, depending on the support you need.</p>
+        </div>
+    </div>
+   <div class="faq-item">
+        <button class="faq-question">Who do you work with?</button>
+        <div class="faq-answer">
+            <p>I support people who feel stuck in recurring patterns or are dealing with anxiety, grief, romantic breakups, guilt, relationship conflicts, attachment issues, low self-esteem, psycho-somatic pain, or the effects of trauma</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What is the difference between a counselling session and a therapy session?</button>
+        <div class="faq-answer">
+            <p>Counselling supports you with a specific issue in the present, such as making a decision, managing a situation, or coping with something that’s currently troubling you. It focuses on the here and now, helping you navigate immediate challenges.</p>
+            <p>Therapy, on the other hand, goes deeper. We may explore your past experiences, beliefs, emotional patterns, triggers, and how early life shaped the way you cope today.</p>
+        </div>
+    </div>
+<div class="faq-item">
+        <button class="faq-question">Do I need to prepare for my first therapy session?</button>
+        <div class="faq-answer">
+            <p>No special preparation is needed, just come as you are. The first session is about understanding your concerns and helping you feel comfortable.<br>
+If possible make sure you’re in a private, comfortable space where you won’t be disturbed.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">How often do I need to take sessions?</button>
+        <div class="faq-answer">
+            <p>When starting therapy, I recommend at least one session per week, preferably same time each week, to maintain consistency and make our work more effective. However, the frequency is completely up to you based on your comfort, needs, and goals.</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="main-footer" id="Contact">
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <h2 class="footer-name">Therapy With Meghs</h2>
+            <p>A safe, warm and supportive space for your experiences, emotions, thoughts to heal and grow.</p>
+        </div>
+
+        <div class="footer-middle">
+            <h3>Connect With Me</h3>
+            <ul>
+                <li><a href="https://wa.me/918076561354" target="_blank">WhatsApp</a></li>
+                <li><a href="mailto:lakhchaura.megha1@gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h3>My Socials</h3>
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com/therapywithmeghs">Instagram</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/megha-l-b67b531a2/">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+       Copyright © 2025 Therapy With Meghs | Designed & Developed by Mayank Lakhchaura
+    </div>
+</footer>
+
+
+<!-- CAROUSEL SCRIPT -->
+<script>
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+const dotsContainer = document.querySelector('.carousel-dots');
+
+slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    if (i === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+});
+
+const dots = Array.from(dotsContainer.children);
+let index = 0;
+
+function showSlide(i) {
+    index = i;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+});
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+});
+
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => showSlide(i));
+});
+
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}, 4000);
+</script>
+
+
+<!-- FAQ SCRIPT -->
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+
+        document.querySelectorAll(".faq-answer").forEach(a => {
+            if (a !== answer) a.style.maxHeight = null;
+        });
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
